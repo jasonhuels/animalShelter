@@ -22,6 +22,9 @@
     @Html.LabelFor(model => model.Breed)
     @Html.TextBoxFor(model => model.Breed)
 
+    @Html.LabelFor(model => model.Species)
+    @Html.DropDownList("SpeciesID")
+
     <input type="submit" value="Save" />
 }
 <p>@Html.ActionLink("Back to list", "Index")</p>

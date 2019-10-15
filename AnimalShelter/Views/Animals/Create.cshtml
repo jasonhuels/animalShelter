@@ -18,6 +18,9 @@
       @Html.EditorFor(model => model.Date, new { @type = "date" })
       @Html.LabelFor(model => model.Breed)
       @Html.TextBoxFor(model => model.Breed)
+
+      @Html.LabelFor(model => model.SpeciesID)
+      @Html.DropDownList("SpeciesID")
       <input type="submit" value="Add new animal" />
   }
   <p>@Html.ActionLink("Show all animals", "Index")</p>
